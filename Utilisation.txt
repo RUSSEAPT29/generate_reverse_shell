@@ -4,7 +4,7 @@ Ouvrez le script generate_reverse_shell.py et modifiez les variables suivantes s
 
 python
 Copy
-LHOST = "192.168.1.182"  # Votre adresse IP
+LHOST = "192.168.1.000"  # Votre adresse IP
 LPORT = 4545             # Port d'écoute
 XOR_KEY = "mcommon"      # Clé de chiffrement XOR
 Exécuter le script :
